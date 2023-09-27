@@ -1,0 +1,14 @@
+<beanio xmlns="http://www.beanio.org/2012/03"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.beanio.org/2012/03 http://www.beanio.org/2012/03/mapping.xsd">
+
+	<stream name="inputMessageStream" format="csv">
+		<record name="inboundNameAddress"
+			class="com.example.camel.camelservicea.beans.NameAddress">
+			<field name="name" minOccurs="1"></field>
+			<field name="address" minOccurs="1"></field>
+			<field name="age" minOccurs="1"></field>
+		</record>
+	</stream>
+
+</beanio>
